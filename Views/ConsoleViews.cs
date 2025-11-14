@@ -52,6 +52,27 @@ namespace MyApp.Views
                        
             Console.WriteLine($"Umfang des Kreises mit Radius {radius} cm ist: {umfang}");
         }
+        //19. String-Verkettung
+        public void ZeigeSatz(string vorname, string nachname, string stadt, string geburtsort)
+        {
+            Console.WriteLine($"Ich bin {vorname} {nachname}, wohne in {stadt} und komme aus {geburtsort}");
+        }
+        //20. Grundrechenarten
+        public void FuehreGrundrechenarten(double zahl1, double zahl2, double zahl3, double zahl4)
+        {
+            Console.WriteLine($"{zahl1} + {zahl2} = {zahl1 + zahl2}");
+            Console.WriteLine($"{zahl1} - {zahl2} = {zahl1 - zahl2}");
+            Console.WriteLine($"{zahl3} * {zahl4} = {zahl3 * zahl4}");
+            if (zahl3 != 0)
+            {
+                Console.WriteLine($"{zahl4} / {zahl3} = {zahl4 / zahl3}");
+            }
+            else
+            {
+                Console.WriteLine("Division durch Null ist nicht möglich.");
+            }
+        }
+
         public void ZeigeText(string text)
         {
             Console.WriteLine(text);
